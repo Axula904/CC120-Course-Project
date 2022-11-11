@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="shortcut icon" type="image/png" href="favicon.png">
+<title>CC120 Course Project</title>
+<meta name="description" content="This is the About Me page">
+<meta name="author" content="Axel Klomparens">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+.material-symbols-outlined{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}
+.color-size {
+  font-size: 200px;
+  color: #4994ec;
+}
+.profilepic {
+  width: 100%;
+}
+.indent {
+  text-indent: 45px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-light-blue w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-light-grey w3-large w3-light-blue" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="pg4.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey w3-right">Future</a>
+    <a href="pg3.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey w3-right">Present</a>
+    <a href="pg2.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-light-grey w3-right">Past</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="pg2.html" class="w3-bar-item w3-button w3-padding-large">Past</a>
+    <a href="pg3.html" class="w3-bar-item w3-button w3-padding-large">Present</a>
+    <a href="pg4.html" class="w3-bar-item w3-button w3-padding-large">Future</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-light-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">About Me</h1>
+  <p class="w3-xlarge">Axel Klomparens</p>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>Who am I?</h1>
+      <p class="w3-padding-32 indent">Hello everyone! I am Axel, obviously, a First Year student at Colorado College. I have a passion for running, cooking, and web development. From sticking to my love and running, through thick and thin, I am lucky enough to be able to say that I get to represent Colorado College as a Varsity Collegiate athlete on the Cross Country and Track and Field teams, I have personal Cross country PRs of; 16:29 for the 5K and 26:58 for the 8K, along with Track PRs of; 2:04 in the 800M, 4:39 in the 1600M, and 10:09 in the 3200M.</p>
+    </div>
+
+    <div class="w3-third w3-center">
+      <img src="profile.jpg" alt="Profile Picture" class="profilepic">
+    </div>
+  </div>
+</div>
+
+<!-- Second Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <span class="material-symbols-outlined color-size">music_note</span>
+    </div>
+
+    <div class="w3-twothird">
+      <h1>One of My Favorite Songs:</h1>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6QBSCFjzmqCuE90vSzmhkE?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-dark-grey w3-center w3-padding-32">
+  <p><a href="ref.html">References</a></p>
+  <p><a href="abtme.html">About Me</a></p>
+ <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
